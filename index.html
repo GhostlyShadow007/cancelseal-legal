@@ -19,42 +19,77 @@
   <nav><a href="index.html" aria-current="page">Privacy</a> · <a href="support.html">Support</a> · <a href="data-deletion.html">Data deletion</a></nav>
 
   <h1>Privacy Policy</h1>
-  <p class="meta">Effective date: 27 October 2026 · Updated for CancelSeal 1.1 · App: CancelSeal (Android) · Developer: The App Nest</p>
+  <p class="meta">Effective date: 28 October 2026 · Updated for CancelSeal 1.2 · App: CancelSeal (Android) · Developer: The App Nest</p>
 
   <h2>Summary</h2>
   <p>CancelSeal is a <strong>local-only</strong> app. It helps you keep proof that you
   cancelled a subscription, free trial, refund, return or warranty, stored
   <strong>only on your own device</strong>. The app has <strong>no internet access</strong>,
-  requires <strong>no account</strong>, and sends <strong>none of your data anywhere</strong>.</p>
+  requires <strong>no account</strong>, and sends <strong>none of your data anywhere by
+  itself</strong>. If you choose to share, save, print, export or email something, that
+  content goes where you send it, through Android or the app you pick.</p>
 
   <h2>What we collect</h2>
   <p><strong>Nothing.</strong> The App Nest does not collect, receive, transmit or share any
   personal data through CancelSeal. There is no analytics, no advertising, no tracking and no
   cloud service. The app does not request Android's internet permission, so it cannot send
-  data off your device.</p>
+  data off your device. When you share, email or export something, you are the one sending
+  it, and The App Nest does not receive a copy.</p>
 
   <h2>What the app stores on your device</h2>
   <ul>
     <li><strong>Proof records</strong>: the service name, type, status, and the optional
     details you enter: cancellation date, re-charge check date and reminder times, amount,
     who bills you (for example Google Play or your bank), confirmation number, the name of
-    the person you spoke to, how you cancelled, and notes. Stored in a private on-device
-    database.</li>
+    the person you spoke to, how you cancelled, and notes. For a free trial: when it
+    started, the date of the first charge, and whether you want a warning before it. Stored
+    in a private on-device database.</li>
     <li><strong>Re-charge check answers</strong>: when you answer "Not charged" or "Got
     charged", the answer and the time you gave it are saved with the proof, to build its
     evidence trail.</li>
     <li><strong>Attached images</strong>: if you attach screenshots or photos, a copy of each
     is saved in the app's private storage, made smaller (at most 2048 pixels on the long side)
     to save space. Your original images are not changed.</li>
-    <li><strong>Settings</strong>: your reminder time and your app lock and app switcher
-    choices.</li>
+    <li><strong>Attached files</strong>: if you attach a PDF, a saved email or a text file
+    (up to 30 MB each), a copy is saved in the app's private storage. PDFs are shown by
+    Android's own PDF renderer inside the app. Your original files are not changed.</li>
+    <li><strong>Dispute Packs</strong>: when you create one, the app builds an A4 PDF on your
+    phone from a proof (its facts, timeline, notes and attached files) and keeps it as a
+    temporary file in its private cache folder. It stays there until Android clears the
+    cache, you create a pack for the same proof again, or you clear the app's storage or
+    uninstall. It is not put in your gallery or Downloads unless you choose Save.</li>
+    <li><strong>Home-screen widgets</strong>: so Android can draw them, the app stores a
+    small summary in its private storage: your protected total, a status line, and the names
+    and dates of your next few re-charge checks. A widget you place on your home screen can
+    be seen by anyone who sees that screen. With app lock on, the widgets show only
+    "CancelSeal is locked".</li>
+    <li><strong>Settings</strong>: your reminder time, your app lock and app switcher
+    choices, and whether you have seen the welcome screens.</li>
     <li><strong>Backups</strong>: when you tap "Export backup" in Settings, the app writes a
     readable backup file in its own folder on your device. Before restoring a backup, the app
     first saves a safety backup of your current vault in the same folder. The app does not
     upload backups; you decide if and where to copy them. Backups hold your proof details,
     not the images.</li>
   </ul>
-  <p>None of this leaves your device unless you move an exported backup file yourself.</p>
+  <p>None of this leaves your device unless you export, share, save, print or email it
+  yourself.</p>
+
+  <h2>Sharing into CancelSeal</h2>
+  <p>CancelSeal appears in Android's share sheet for images, PDFs, text and emails. When you
+  share something to it from another app, CancelSeal receives only what you chose to share.
+  It keeps a temporary copy in its private cache (only the latest share is kept) and, if you
+  save it, adds it to a new or existing proof. Nothing is sent anywhere.</p>
+
+  <h2>Sharing out: Dispute Pack and email</h2>
+  <p>Share, Save and Print on a Dispute Pack, and "Send via email app" on a dispute email,
+  hand a file or text to Android or to an app you pick: the share sheet, Android's "Save
+  to&hellip;" picker, Android's print service, or your own email app. CancelSeal prepares
+  an email draft (To, Subject, text and the PDF) but <strong>does not send it</strong>. You
+  review and send it from your email app, and it travels through your email provider under
+  that provider's terms. The address and text you type for a draft are not saved by
+  CancelSeal. The App Nest receives nothing.</p>
+  <p>To open your draft, CancelSeal asks Android which apps on your phone can handle email
+  links. The answer stays on your device. This is not a permission.</p>
 
   <h2>App lock</h2>
   <p>If you turn on app lock, CancelSeal asks Android to confirm it's you with your
@@ -65,8 +100,8 @@
 
   <h2>Permissions and why they're used</h2>
   <ul>
-    <li><strong>Notifications</strong>: only to show reminders you scheduled. Asked for only
-    when you save a reminder.</li>
+    <li><strong>Notifications</strong>: only to show reminders and trial warnings you
+    scheduled. Asked for only when you save one.</li>
     <li><strong>Run at startup</strong>: to re-arm reminders you already set after the phone
     restarts.</li>
     <li><strong>Vibration</strong>: so a reminder notification can vibrate.</li>
@@ -74,19 +109,25 @@
     system photo picker gives the app access only to the images you pick.</li>
     <li><strong>Biometrics</strong>: only if you turn on app lock, to show Android's own
     unlock prompt (see App lock above).</li>
-    <li><strong>Files you choose</strong>: when you restore a backup with "Choose a file",
-    Android's file picker gives the app only the one file you pick. No storage permission is
-    used.</li>
+    <li><strong>Files you choose</strong>: when you attach a PDF or file, or restore a backup
+    with "Choose a file", Android's file picker gives the app only the one file you pick.
+    No storage permission is used.</li>
     <li><strong>No internet permission</strong>: the app has no network capability.</li>
   </ul>
+  <p>Sharing into the app, Dispute Packs, email drafts and home-screen widgets need no
+  additional permission.</p>
   <p>Links in the app (this policy, support, data deletion, and Google Play's subscriptions
   page) open in your web browser or the Play Store app. That app, not CancelSeal, loads those
   pages. The battery setting shortcut opens Android's own settings for CancelSeal.</p>
 
   <h2>Data retention and deletion</h2>
   <p>Your data stays on your device for as long as the app is installed. Deleting a proof
-  removes it and its attached images. Uninstalling the app removes all of its data. There is
-  no account and no copy on any server. See <a href="data-deletion.html">Data deletion</a>.</p>
+  removes it and its attached images and files. Temporary copies (shared-in files and
+  Dispute Packs) stay in the app's cache until Android clears it; you can clear it yourself
+  in Android's settings without losing your proofs. Uninstalling the app removes all of its
+  data, including those copies and the widget summary. Files you saved, shared or emailed
+  elsewhere are outside the app and yours to delete. There is no account and no copy on any
+  server. See <a href="data-deletion.html">Data deletion</a>.</p>
 
   <h2>Children</h2>
   <p>CancelSeal collects no data from anyone, including children.</p>
