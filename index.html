@@ -19,7 +19,7 @@
   <nav><a href="index.html" aria-current="page">Privacy</a> · <a href="support.html">Support</a> · <a href="data-deletion.html">Data deletion</a></nav>
 
   <h1>Privacy Policy</h1>
-  <p class="meta">Effective date: 27 October 2026 · App: CancelSeal (Android) · Developer: The App Nest</p>
+  <p class="meta">Effective date: 27 October 2026 · Updated for CancelSeal 1.1 · App: CancelSeal (Android) · Developer: The App Nest</p>
 
   <h2>Summary</h2>
   <p>CancelSeal is a <strong>local-only</strong> app. It helps you keep proof that you
@@ -36,15 +36,32 @@
   <h2>What the app stores on your device</h2>
   <ul>
     <li><strong>Proof records</strong>: the service name, type, status, and the optional
-    cancellation date, reminder date, amount and notes you enter. Stored in a private on-device
+    details you enter: cancellation date, re-charge check date and reminder times, amount,
+    who bills you (for example Google Play or your bank), confirmation number, the name of
+    the person you spoke to, how you cancelled, and notes. Stored in a private on-device
     database.</li>
-    <li><strong>Attached images</strong>: if you attach a screenshot or photo, a copy is saved in
-    the app's private storage. Your original image is not changed.</li>
+    <li><strong>Re-charge check answers</strong>: when you answer "Not charged" or "Got
+    charged", the answer and the time you gave it are saved with the proof, to build its
+    evidence trail.</li>
+    <li><strong>Attached images</strong>: if you attach screenshots or photos, a copy of each
+    is saved in the app's private storage, made smaller (at most 2048 pixels on the long side)
+    to save space. Your original images are not changed.</li>
+    <li><strong>Settings</strong>: your reminder time and your app lock and app switcher
+    choices.</li>
     <li><strong>Backups</strong>: when you tap "Export backup" in Settings, the app writes a
-    readable backup file in its own folder on your device. It is never uploaded; you decide if
-    and where to copy it.</li>
+    readable backup file in its own folder on your device. Before restoring a backup, the app
+    first saves a safety backup of your current vault in the same folder. Backups are never
+    uploaded; you decide if and where to copy them. Backups hold your proof details, not the
+    images.</li>
   </ul>
   <p>None of this leaves your device unless you move an exported backup file yourself.</p>
+
+  <h2>App lock</h2>
+  <p>If you turn on app lock, CancelSeal asks Android to confirm it's you with your
+  fingerprint, face or device PIN, pattern or password. Android checks this itself:
+  CancelSeal never sees, stores or sends your fingerprint, face data or PIN; it only learns
+  whether the check succeeded. "Hide in app switcher" stops the app's screen from showing in
+  recent apps and in screenshots.</p>
 
   <h2>Permissions and why they're used</h2>
   <ul>
@@ -55,10 +72,16 @@
     <li><strong>Vibration</strong>: so a reminder notification can vibrate.</li>
     <li><strong>Photo picker / camera</strong>: only when you choose to attach an image. The
     system photo picker gives the app access only to the images you pick.</li>
+    <li><strong>Biometrics</strong>: only if you turn on app lock, to show Android's own
+    unlock prompt (see App lock above).</li>
+    <li><strong>Files you choose</strong>: when you restore a backup with "Choose a file",
+    Android's file picker gives the app only the one file you pick. No storage permission is
+    used.</li>
     <li><strong>No internet permission</strong>: the app has no network capability.</li>
   </ul>
-  <p>Links in the app's Settings (this policy, support and data deletion) open in your web
-  browser. The browser, not CancelSeal, loads those pages.</p>
+  <p>Links in the app (this policy, support, data deletion, and Google Play's subscriptions
+  page) open in your web browser or the Play Store app. That app, not CancelSeal, loads those
+  pages. The battery setting shortcut opens Android's own settings for CancelSeal.</p>
 
   <h2>Data retention and deletion</h2>
   <p>Your data stays on your device for as long as the app is installed. Deleting a proof
