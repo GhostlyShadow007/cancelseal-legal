@@ -19,7 +19,7 @@
   <nav><a href="index.html" aria-current="page">Privacy</a> · <a href="support.html">Support</a> · <a href="data-deletion.html">Data deletion</a></nav>
 
   <h1>Privacy Policy</h1>
-  <p class="meta">Effective date: 28 October 2026 · Updated for CancelSeal 1.2 · App: CancelSeal (Android) · Developer: The App Nest</p>
+  <p class="meta">Effective date: 28 October 2026 · Updated for CancelSeal 1.3 · App: CancelSeal (Android) · Developer: The App Nest</p>
 
   <h2>Summary</h2>
   <p>CancelSeal is a <strong>local-only</strong> app. It helps you keep proof that you
@@ -39,14 +39,19 @@
   <h2>What the app stores on your device</h2>
   <ul>
     <li><strong>Proof records</strong>: the service name, type, status, and the optional
-    details you enter: cancellation date, re-charge check date and reminder times, amount,
-    who bills you (for example Google Play or your bank), confirmation number, the name of
-    the person you spoke to, how you cancelled, and notes. For a free trial: when it
-    started, the date of the first charge, and whether you want a warning before it. Stored
-    in a private on-device database.</li>
+    details you enter: cancellation date, re-charge check date and reminder times, amount
+    and its currency, who bills you (for example Google Play or your bank), confirmation
+    number, the name of the person you spoke to, how you cancelled, and notes. For a free
+    trial: when it started, the date of the first charge, and whether you want a warning
+    before it. If you change a proof's dispute window, the number of days. The evidence
+    items you tick yourself on the evidence meter. Stored in a private on-device
+    database.</li>
     <li><strong>Re-charge check answers</strong>: when you answer "Not charged" or "Got
     charged", the answer and the time you gave it are saved with the proof, to build its
     evidence trail.</li>
+    <li><strong>Cancel now log</strong>: if you use "Cancel now", the steps you took, the
+    problems you logged (for example "stuck in a bot or chat loop") and when, saved with the
+    proof. Anything you capture during it is stored like any other attachment.</li>
     <li><strong>Attached images</strong>: if you attach screenshots or photos, a copy of each
     is saved in the app's private storage, made smaller (at most 2048 pixels on the long side)
     to save space. Your original images are not changed.</li>
@@ -74,6 +79,17 @@
   <p>None of this leaves your device unless you export, share, save, print or email it
   yourself.</p>
 
+  <h2>Built into the app</h2>
+  <ul>
+    <li><strong>Cancellation guides</strong>: the "How to cancel" guides are part of the app
+    itself. Opening one loads nothing from the internet and tells no one which guide you
+    read. A guide shows the provider's website as plain text; the app doesn't open it.</li>
+    <li><strong>Calendar, evidence meter and dispute deadline</strong>: worked out on your
+    phone from your own proofs.</li>
+    <li><strong>Default currency</strong>: the app reads your phone's region setting to pick
+    the currency it suggests for a new proof. That setting stays on your device.</li>
+  </ul>
+
   <h2>Sharing into CancelSeal</h2>
   <p>CancelSeal appears in Android's share sheet for images, PDFs, text and emails. When you
   share something to it from another app, CancelSeal receives only what you chose to share.
@@ -100,8 +116,9 @@
 
   <h2>Permissions and why they're used</h2>
   <ul>
-    <li><strong>Notifications</strong>: only to show reminders and trial warnings you
-    scheduled. Asked for only when you save one.</li>
+    <li><strong>Notifications</strong>: only to show reminders, trial warnings and
+    dispute-deadline reminders. Asked for only when you save a reminder or answer "Got
+    charged".</li>
     <li><strong>Run at startup</strong>: to re-arm reminders you already set after the phone
     restarts.</li>
     <li><strong>Vibration</strong>: so a reminder notification can vibrate.</li>
@@ -114,8 +131,8 @@
     No storage permission is used.</li>
     <li><strong>No internet permission</strong>: the app has no network capability.</li>
   </ul>
-  <p>Sharing into the app, Dispute Packs, email drafts and home-screen widgets need no
-  additional permission.</p>
+  <p>Sharing into the app, Dispute Packs, email drafts, cancellation guides, the calendar
+  and home-screen widgets need no additional permission.</p>
   <p>Links in the app (this policy, support, data deletion, and Google Play's subscriptions
   page) open in your web browser or the Play Store app. That app, not CancelSeal, loads those
   pages. The battery setting shortcut opens Android's own settings for CancelSeal.</p>
